@@ -38,4 +38,4 @@ def Prediction_VGG16(image):
 
 demo = gr.Interface(Prediction_VGG16, gr.inputs.Image(shape=(224,224)),gr.Label(num_top_classes=2))
 
-demo.launch()
+demo.launch(server_name="0.0.0.0")
